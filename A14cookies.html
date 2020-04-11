@@ -1,0 +1,30 @@
+<doctype html>
+<html lang = "en">
+
+<head>
+<meta charset = "utf-8">
+<title> Cookies </title>
+
+</head>
+
+<body>
+<form action = "" name = "form">
+  <label for="name">Your name:</label><br>
+  <input type="text" id="name" name="name"/><br>
+  <input type = "submit" onclick = "getCookie()"/>
+
+  <script type = "text/javascript">
+    <!--
+    function getCookie(){
+      var dom = document.getElementById("name").value + ";";
+      document.cookie = dom;
+      var cook = document.cookie;
+      var cookArray = cook.split(";");
+      document.write("Welcome "+ cookArray[1]);
+    }
+      //-->
+  </script>
+
+</form>
+</body>
+</html>
